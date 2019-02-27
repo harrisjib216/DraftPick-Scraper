@@ -16,7 +16,7 @@ class DraftPick():
         # rankings
         athlete_list = soup.find_all('div', attrs={'class': 'primary'})
         for rank in athlete_list:
-            print(rank)
+            print(rank.string)
 
         # profile images
         athlete_list = soup.find_all('img', attrs={'class': 'jsonly'})
